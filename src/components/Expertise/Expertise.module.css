@@ -1,0 +1,32 @@
+.expertise {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experienceItem {
+  display: flex;
+  gap: 30px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 120px;
+}
+
+.company,
+.job,
+.description {
+  color: var(--color-oxfordBlue);
+}
+
+.date {
+  color: var(--color-raven);
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+}

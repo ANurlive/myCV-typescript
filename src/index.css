@@ -1,0 +1,99 @@
+@import "./myNormalize.css";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-midnight: #000614;
+  --color-oxfordBlue: #222935;
+  --color-green: #26c17e;
+  --color-raven: #667081;
+  --color-gallery: #eeeeee;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-alto: #dddddd;
+
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-25: 1.562rem;
+  --secondary-line-height: 1.2;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--color-white);
+  color: var(--color-oxfordBlue);
+}
+
+.body-norm-style {
+  font-size: var(--fs-14);
+  line-height: 1.2;
+}
+.body-title1-style {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: var(--fs-25);
+}
+
+.body-title2-style {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: var(--fs-16);
+}
+
+.body-norm2-style {
+  line-height: 1.2;
+  font-size: var(--fs-16);
+}
+.body-second-style {
+  line-height: 1.2;
+  font-size: var(--fs-12);
+}
+.sidebar-norm-style {
+  line-height: 1.2;
+  font-size: var(--fs-16);
+}
+
+.sidebar-semib-style {
+  line-height: 1.2;
+  font-size: var(--fs-16);
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+div,
+h1,
+h2,
+h3 {
+  margin: 0;
+}

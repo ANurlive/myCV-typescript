@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navButtons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-size: var(--fs-16);
+  line-height: 1.2;
+  color: var(--color-raven);
+}
+
+.navButtons:hover {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .navButtons {
+    padding: 20px 5px;
+  }
+}

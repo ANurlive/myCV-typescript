@@ -1,0 +1,15 @@
+.home {
+  height: 100vh; /* высота ровно в размер экрана */
+  background-image: url("../../assets/images/homeBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* если текст и кнопка идут друг под другом */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.homeButton {
+  border-radius: 8px;
+}

@@ -1,0 +1,50 @@
+.timelineContainer {
+  min-height: 30vh;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.timelineList {
+  position: relative;
+  padding: 15px;
+}
+.timelineList::before {
+  background-color: var(--color-green);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 4px;
+  content: "";
+  margin-left: 18px;
+}
+.timelineList li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.date {
+  position: relative;
+  padding: 15px;
+  background-color: var(--color-white);
+  left: -15px;
+}
+.itemInfo {
+  position: relative;
+  background-color: var(--color-gallery);
+  padding: 15px;
+  width: 100%;
+}
+.itemInfo::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid var(--color-gallery);
+}

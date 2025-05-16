@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background-color: var(--color-oxfordBlue);
+  color: var(--color-white);
+  border: none;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-size: var(--fs-16);
+  line-height: 1.2;
+  gap: 18px;
+}
+
+.button:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.button.active {
+  color: var(--color-green);
+}
+
+.icon {
+  color: inherit;
+  min-width: 22px;
+}
+
+.text {
+  color: inherit;
+}
