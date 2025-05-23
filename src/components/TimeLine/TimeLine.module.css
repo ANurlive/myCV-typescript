@@ -48,3 +48,29 @@
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--color-gallery);
 }
+
+.errorMessage {
+  color: red;
+  align-self: center;
+}
+.emptyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}
+.spinnerIcon {
+  animation: spin 1s linear infinite;
+  font-size: 32px;
+  color: var(--color-green);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

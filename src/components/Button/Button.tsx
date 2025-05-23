@@ -8,6 +8,8 @@ type ButtonProps = {
   showText?: boolean;
   onClick?: () => void;
   isActive?: boolean;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,6 +19,8 @@ const Button: React.FC<ButtonProps> = ({
   showText = true,
   onClick,
   isActive,
+  disabled = false,
+  type = "button",
 }) => {
   return (
     <button
@@ -26,6 +30,8 @@ const Button: React.FC<ButtonProps> = ({
         ${className || ""}
       `}
       onClick={onClick}
+      disabled={disabled}
+      type={type}
     >
       {icon && <span className={styles.icon}>{icon}</span>}
       {showText && text && <span className={styles.text}>{text}</span>}

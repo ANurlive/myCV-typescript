@@ -25,6 +25,13 @@
   color: var(--color-green);
 }
 
+.button:disabled {
+  background-color: var(--color-oxfordBlue);
+  color: var(--color-black);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .icon {
   color: inherit;
   min-width: 22px;

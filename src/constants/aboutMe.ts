@@ -1,4 +1,6 @@
 import avatar from "../assets/images/myPhoto.jpg";
+import MichaelAvatar from "../assets/images/MichaelJohnson-avatar.jpg";
+import ElenaAvatar from "../assets/images/ElenaPetrova-avatar.jpg";
 
 export const myData = {
   name: "Kozhbanova Assel",
@@ -62,19 +64,19 @@ export const experienceData = [
 export const feedbackData = [
   {
     feedback:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. ",
+      "I had the pleasure of mentoring Assel during her early front-end development journey at EPAM. From the very beginning, she showed exceptional curiosity, fast learning abilities, and strong motivation to grow. Her willingness to accept feedback and apply it immediately made her stand out among peers. Assel has a solid understanding of React, CSS, and JavaScript fundamentals, and actively contributes to team discussions. I’m confident she will grow into a valuable asset on any front-end team. ",
     author: {
-      photoUrl: `${avatar}`,
-      name: "Sam Smith",
+      photoUrl: `${MichaelAvatar}`,
+      name: "Michael Johnson, Frontend Developer, EPAM Systems",
       citeUrl: "somesite.com",
     },
   },
   {
     feedback:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. ",
+      "Working with Assel on internal front-end tasks has been a positive experience. She consistently demonstrated responsibility, attention to detail, and persistence when facing coding challenges. I was especially impressed by her ability to troubleshoot layout issues and refactor components for reusability. Despite being at the beginning of her career, she communicates clearly and asks the right questions. I believe she has the potential to become a strong front-end engineer with continued mentorship and real-world practice. ",
     author: {
-      photoUrl: `${avatar}`,
-      name: "Sam Smith",
+      photoUrl: `${ElenaAvatar}`,
+      name: "Elena Petrova, Software Engineer, EPAM Systems",
       citeUrl: "somesite.com",
     },
   },

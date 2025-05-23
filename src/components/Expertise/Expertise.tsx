@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Expertise.module.css";
 
-type ExperienceItem = {
+// ОПЫТ РАБОТЫ
+
+export type ExperienceItem = {
   date: string;
   info: {
     company: string;

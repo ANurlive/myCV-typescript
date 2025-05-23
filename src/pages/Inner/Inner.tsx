@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Inner.module.css";
 import Panel from "@/components/Panel/Panel";
 import Box from "@/components/Box/Box";
-import {
-  aboutMe,
-  educationData,
-  experienceData,
-  feedbackData,
-} from "@/constants/aboutMe";
+import { aboutMe, experienceData, feedbackData } from "@/constants/aboutMe";
 import Timeline from "@/components/TimeLine/TimeLine";
 import Expertise from "@/components/Expertise/Expertise";
 import Portfolio from "@/components/Portfolio/Portfolio";
@@ -17,7 +12,8 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Button from "@/components/Button/Button";
-import onScrollToSection from "@/services/onScrollToSection";
+import onScrollToSection from "@/utils/onScrollToSection";
+import { Skills } from "@/components/Skills/Skills";
 
 export const Inner: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -37,23 +33,21 @@ export const Inner: React.FC = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 600) {
-        setShowText(false); // Скрыть текст на маленьких экранах
+        setShowText(false);
         setSizeAvatar("small");
         setSideBarWidth(54);
       } else {
-        setShowText(true); // Показать текст на больших экранах
+        setShowText(true);
         setSizeAvatar("medium");
         setSideBarWidth(250);
       }
     };
 
-    // Инициализация проверки размера при монтировании компонента
     handleResize();
 
     // Добавление слушателя для изменения размера экрана
     window.addEventListener("resize", handleResize);
 
-    // Очистка слушателя при размонтировании
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -87,17 +81,13 @@ export const Inner: React.FC = () => {
         transition={{ duration: 0.4 }}
       >
         <Box id="about" title="About me" content={<p>{aboutMe}</p>} />
-        <Box
-          id="education"
-          title="Education"
-          content={<Timeline data={educationData} />}
-        />
+        <Box id="education" title="Education" content={<Timeline />} />
         <Box
           id="experience"
           title="Experience"
           content={<Expertise data={experienceData} />}
         />
-        <Box id="skills" title="Skills" content={<p>Block with skills</p>} />
+        <Box id="skills" title="Skills" content={<Skills />} />
         <Box id="portfolio" title="Portfolio" content={<Portfolio />} />
         <Box id="contacts" title="Contacts" content={<Address />} />
         <Box

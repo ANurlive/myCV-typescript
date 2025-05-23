@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  border: 2px solid #26c17e;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-bottom: 40px;
+}
+.labels {
+  margin-right: 20px;
+}
+.fields {
+  border: 1px solid var(--color-raven);
+  border-radius: 5px;
+}
+.fieldWithError {
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.fields::placeholder {
+  font-size: 12px;
+  color: inherit;
+  opacity: 60%;
+}
+.errorMessage {
+  color: red;
+  font-size: 10px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.addSkillButton {
+  background-color: var(--color-oxfordBlue);
+  color: var(--color-white);
+  width: 103px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  gap: 5px;
+  padding: 5px;
+}

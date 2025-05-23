@@ -10,3 +10,7 @@
   color: var(--color-green);
   margin-bottom: 0;
 }
+.content {
+  width: 100%;
+  height: auto;
+}

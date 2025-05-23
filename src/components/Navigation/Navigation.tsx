@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faComment, faGem } from "@fortawesome/free-regular-svg-icons";
 import styles from "./Navigation.module.css";
-import onScrollToSection from "@/services/onScrollToSection";
+import onScrollToSection from "@/utils/onScrollToSection";
 import { useEffect, useRef, useState } from "react";
 
 const navItems = [

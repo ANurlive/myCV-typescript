@@ -1,0 +1,73 @@
+.skillsContainer {
+  margin-bottom: 50px;
+  margin-top: -65px;
+}
+.scale {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--color-raven);
+}
+.scaleDividers {
+  flex: 1;
+  min-width: 0;
+  height: 10px;
+  border-left: 1px solid var(--color-raven);
+  border-right: 1px solid var(--color-raven);
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.labelText {
+  color: var(--color-raven);
+}
+.skillBarList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.skillBar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: start;
+  padding-left: 15px;
+  height: 28px;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.title {
+  color: var(--color-green);
+}
+.editButton {
+  background-color: var(--color-oxfordBlue);
+  color: var(--color-white);
+  width: 138px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+.errorMessage {
+  color: red;
+  align-self: center;
+}
+.emptyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}

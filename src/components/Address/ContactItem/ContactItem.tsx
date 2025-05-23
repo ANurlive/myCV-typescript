@@ -57,7 +57,11 @@ const ContactItem: React.FC<ContactItemProps> = ({ icon, text, title }) => {
   };
 
   return (
-    <div className={styles.contactItem} onClick={handleClick}>
+    <div
+      className={styles.contactItem}
+      onClick={handleClick}
+      data-testid="contactItemDiv"
+    >
       <FontAwesomeIcon icon={getIcon()} className={styles.icon} />
       <div className={styles.infoContainer}>
         {title && <p className={styles.contactTitle}>{title}</p>}
