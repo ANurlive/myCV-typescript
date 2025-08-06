@@ -6,9 +6,7 @@ const onScrollToSection = (id: string) => {
   console.log(scrollingContainer);
   console.log(element);
   if (element) {
-    const top = element?.getBoundingClientRect().top! + window.scrollY;
-    // element.scrollIntoView({ behavior: "smooth", block: "start" });
-    scrollingContainer?.scrollTo({ top, behavior: "smooth" });
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
 

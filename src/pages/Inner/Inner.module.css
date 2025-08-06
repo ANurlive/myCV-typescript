@@ -55,7 +55,7 @@
 /* Мобильная адаптация */
 @media (max-width: 600px) {
   .panel {
-    width: 100%;
+    width: 54px;
     height: auto;
   }
 

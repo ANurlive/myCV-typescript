@@ -2,10 +2,10 @@ import "@/services/server";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
+import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./store/rootReducer.ts";
+import store from "./store/rootReducer";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

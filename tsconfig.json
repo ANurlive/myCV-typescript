@@ -4,7 +4,7 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  /* Для корректного импортирования CommonJS-модули через синтаксис import default*/
+
   "compilerOptions": {
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

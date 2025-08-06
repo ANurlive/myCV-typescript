@@ -32,7 +32,7 @@ const Timeline: React.FC = () => {
     );
 
   return (
-    <div className={styles.timelineContainer}>
+    <div className={styles.timelineContainer} data-testid="spinner">
       <div className={styles.spinner}>
         <ul className={styles.timelineList}>
           {educations.length > 0 ? (
