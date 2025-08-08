@@ -5,6 +5,6 @@ import Address from "./Address";
 describe("Address component", () => {
   it("should render ContactItem component", () => {
     render(<Address />);
-    expect(screen.getByText("facebook")).toBeInTheDocument();
+    expect(screen.getByText("kozhbanova.23@gmail.com")).toBeInTheDocument();
   });
 });

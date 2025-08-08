@@ -66,8 +66,8 @@ export const Skills: React.FC = () => {
       </div>
       <div className={`${styles.labels} body-second-style`}>
         <div className={styles.labelText}>Beginner</div>
+        <div className={styles.labelText}>Intermediate</div>
         <div className={styles.labelText}>Proficient</div>
-        <div className={styles.labelText}>Expert</div>
         <div className={styles.labelText}>Master</div>
       </div>
     </div>

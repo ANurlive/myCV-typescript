@@ -57,6 +57,7 @@ export const Inner: React.FC = () => {
     <div className={styles.innerPage}>
       <motion.div
         className={styles.sidebarContainer}
+        initial={false}
         animate={{
           x: sidebarOpen ? 0 : -sideBarWidth,
         }}
@@ -77,6 +78,7 @@ export const Inner: React.FC = () => {
 
       <motion.div
         className={styles.mainContent}
+        initial={false}
         animate={{ marginLeft: sidebarOpen ? sideBarWidth : 0 }}
         transition={{ duration: 0.4 }}
       >

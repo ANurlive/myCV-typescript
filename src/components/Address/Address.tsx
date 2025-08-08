@@ -9,11 +9,9 @@ const Address: React.FC = () => {
       <ContactItem icon="email" text="kozhbanova.23@gmail.com" />
       <ContactItem
         icon="linkedin"
-        text="assel-kozhbanova-1993n"
+        text="kozh-assel"
         title="Linkedin"
       />
-      <ContactItem icon="facebook" text="facebook" title="Facebook" />
-      <ContactItem icon="skype" text="kamsolutions.pl" title="Skype" />
     </div>
   );
 };

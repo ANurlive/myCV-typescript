@@ -11,37 +11,39 @@ export const myData = {
 };
 
 export const aboutMe =
-  "My name is Assel. I hold a degree in Power Engineering and have worked in three different roles — from a Production and Technical Service Engineer to a Project Manager Assistant in the field of data center design. These roles helped me develop strong systems thinking, discipline, and a sense of responsibility. However, over time I realized that I was missing a sense of engagement and the opportunity to see tangible results from my work. That’s what led me to IT. I remembered how much I enjoyed programming back in university and decided to give it a real try. With support from the government and EPAM, I completed a front-end development course where I studied HTML, CSS, JavaScript, React, Git, API integration, and much more. It was an intensive journey filled with practical tasks, mentorship, and real-world cases. Now, I feel confident navigating modern front-end tools, working with code, understanding existing solutions, and building interfaces of my own. I continue to grow and gain hands-on experience. If you’d like to get to know me better — feel free to scroll down the page. And if we might be a good fit — don’t hesitate to get in touch. I’d be happy to connect.";
+  "I'm a junior Front-End Developer who recently made the exciting decision to switch careers into tech — and I’ve never been more motivated. After 5+ years working in engineering and administrative roles at KEGOC and Amperel, I realized I wanted more: a job filled with interesting challenges and real growth potential. That’s when I thought about development. Back in university, I took a course in basic programming and algorithms — and I remember how much I enjoyed it. It felt exciting and creative. So now, years later, I’ve decided to bring that old passion to life. In 2024, I earned a spot in the competitive Tech Orda program and received a scholarship voucher to study Front-End Development at EPAM. The course taught me a lot and helped me build a strong foundation in technologies like React, TypeScript, Redux Toolkit, and working with REST APIs. Now, I am eager to join a forward-thinking IT company where I can apply my new skills, continue learning, and grow into a highly valuable team member. I'm confident that the skills I gained in my previous roles — such as responsibility, problem-solving, communication with clients, and leading meetings with colleagues — will definitely be valuable in my new profession.";
 
 export const educationData = [
-  {
-    date: 2012,
-    title: "BSc Electric Power Supply ",
-    text: "Peter the Great Saint-Petersburg State Polytechnic University, Institute of Energy and Transport Systems, Electrical Power Systems and Networks.",
+    {
+    date: 2024,
+    title: "Front-End Developer",
+    text: "LLP EPAM Solutions",
   },
-  {
+    {
     date: 2016,
     title: "MSc Optimization of developing power supply systems ",
     text: "Peter the Great Saint-Petersburg State Polytechnic University, Institute of Energy and Transport Systems, Electrical Power Systems and Networks. ",
   },
   {
-    date: 2024,
-    title: "Front-End Developer",
-    text: "LLP EPAM Solutions",
+    date: 2012,
+    title: "BSc Electric Power Supply ",
+    text: "Peter the Great Saint-Petersburg State Polytechnic University, Institute of Energy and Transport Systems, Electrical Power Systems and Networks.",
   },
+
+
 ];
 
 export const experienceData = [
-  {
-    date: "2018-2019",
+    {
+    date: "2023-2024",
     info: {
-      company: "JSC “KEGOC”",
-      job: "Clerk",
+      company: "LLP Amperel",
+      job: "Assistant Project Manager",
       description:
-        "I carried out executive assignments, participated in negotiations related to the company leadership’s activities, managed internal document workflow, and maintained correspondence with external organizations. I was also responsible for receiving and registering incoming correspondence. Additionally, I have experience in drafting minutes of technical and operational meetings chaired by company management.",
+        "As a project manager assistant in the data center design field, I provided full documentation support for projects, assisted with organizational processes, and managed contracts with suppliers and clients. I handled procurement of required materials, maintained inventory records, worked in 1C software, and prepared financial and accounting closing documents.",
     },
   },
-  {
+    {
     date: "2019-2022",
     info: {
       company: "JSC “KEGOC”",
@@ -51,14 +53,16 @@ export const experienceData = [
     },
   },
   {
-    date: "2023-2024",
+    date: "2018-2019",
     info: {
-      company: "LLP Amperel",
-      job: "Assistant Project Manager",
+      company: "JSC “KEGOC”",
+      job: "Clerk",
       description:
-        "As a project manager assistant in the data center design field, I provided full documentation support for projects, assisted with organizational processes, and managed contracts with suppliers and clients. I handled procurement of required materials, maintained inventory records, worked in 1C software, and prepared financial and accounting closing documents.",
+        "I carried out executive assignments, participated in negotiations related to the company leadership’s activities, managed internal document workflow, and maintained correspondence with external organizations. I was also responsible for receiving and registering incoming correspondence. Additionally, I have experience in drafting minutes of technical and operational meetings chaired by company management.",
     },
   },
+
+
 ];
 
 export const feedbackData = [
@@ -67,7 +71,7 @@ export const feedbackData = [
       "I had the pleasure of mentoring Assel during her early front-end development journey at EPAM. From the very beginning, she showed exceptional curiosity, fast learning abilities, and strong motivation to grow. Her willingness to accept feedback and apply it immediately made her stand out among peers. Assel has a solid understanding of React, CSS, and JavaScript fundamentals, and actively contributes to team discussions. I’m confident she will grow into a valuable asset on any front-end team. ",
     author: {
       photoUrl: `${MichaelAvatar}`,
-      name: "Michael Johnson, Frontend Developer, EPAM Systems",
+      name: "Michael Johnson, Frontend Developer, Some company",
       citeUrl: "somesite.com",
     },
   },
@@ -76,7 +80,7 @@ export const feedbackData = [
       "Working with Assel on internal front-end tasks has been a positive experience. She consistently demonstrated responsibility, attention to detail, and persistence when facing coding challenges. I was especially impressed by her ability to troubleshoot layout issues and refactor components for reusability. Despite being at the beginning of her career, she communicates clearly and asks the right questions. I believe she has the potential to become a strong front-end engineer with continued mentorship and real-world practice. ",
     author: {
       photoUrl: `${ElenaAvatar}`,
-      name: "Elena Petrova, Software Engineer, EPAM Systems",
+      name: "Elena Petrova, Software Engineer, Some company",
       citeUrl: "somesite.com",
     },
   },

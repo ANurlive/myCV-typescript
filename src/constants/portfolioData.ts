@@ -1,59 +1,44 @@
-import uiImage from "../assets/images/UI-image.png";
-import codeImage from "../assets/images/code-image.png";
+import asyncRace from "../assets/images/async-race.png";
+import movieRoom from "../assets/images/movie-room-app.png";
+import asyncCode from "../assets/images/async-code.png";
+import movieCode from "../assets/images/movie-code.png";
+
 
 export const portfolioItems = [
   {
     id: 1,
-    title: "Modern Landing Page",
+    title: "Async-race",
     category: "ui",
-    image: uiImage,
+    image: asyncRace,
     description:
-      "A clean and responsive landing page designed with Tailwind CSS. Focused on modern layout and typography.",
-    link: "https://github.com/yourusername/landing-page",
+      "Async Race is a car racing application built with React and TypeScript that lets users create, customize, and manage a virtual garage of cars. ",
+    link: "https://github.com/ANurlive/async-race",
   },
-  {
+    {
     id: 2,
-    title: "Food Delivery UI",
-    category: "ui",
-    image: uiImage,
+    title: "Async-race",
+    category: "code",
+    image: asyncCode,
     description:
-      "Mobile-first design concept for a food delivery app. Includes menu, cart, and order screens.",
-    link: "https://www.behance.net/gallery/yourproject",
+      "Async Race is a car racing application built with React and TypeScript that lets users create, customize, and manage a virtual garage of cars. ",
+    link: "https://github.com/ANurlive/async-race",
   },
   {
     id: 3,
-    title: "Portfolio Website Design",
+    title: "Movie-room App",
     category: "ui",
-    image: uiImage,
+    image: movieRoom,
     description:
-      "Personal portfolio concept emphasizing minimalism and clean layout. Designed in Figma.",
-    link: "https://dribbble.com/shots/yourshot",
+      "Movie Room is a React-based application that allows users to search for movies by title and browse through a list of results.",
+    link: "https://assels-movie-room.netlify.app/755898",
   },
-  {
+   {
     id: 4,
-    title: "Todo App with React",
+    title: "Movie-room App",
     category: "code",
-    image: codeImage,
+    image: movieCode,
     description:
-      "A simple todo list app built with React and localStorage. Includes add, delete, and filter features.",
-    link: "https://github.com/yourusername/react-todo-app",
-  },
-  {
-    id: 5,
-    title: "Weather App with API",
-    category: "code",
-    image: codeImage,
-    description:
-      "Weather forecast app using OpenWeather API. Shows current weather by city with icons and temperature.",
-    link: "https://github.com/yourusername/weather-app",
-  },
-  {
-    id: 6,
-    title: "Blog Layout with Grid",
-    category: "code",
-    image: codeImage,
-    description:
-      "Static blog layout using CSS Grid and Flexbox. Responsive and accessible design.",
-    link: "https://github.com/yourusername/blog-layout",
+      "Movie Room is a React-based application that allows users to search for movies by title and browse through a list of results.",
+    link: "https://github.com/ANurlive/movie-room-app",
   },
 ];

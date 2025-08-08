@@ -81,7 +81,7 @@ const Portfolio: React.FC = () => {
                   {item.title}
                 </h3>
                 <p className={styles.cardDescription}>{item.description}</p>
-                <a href={item.link} className={styles.cardLink}>
+                <a href={item.link} className={styles.cardLink} target="_blank" rel="noopener noreferrer">
                   View resource
                 </a>
               </div>
