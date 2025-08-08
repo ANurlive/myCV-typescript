@@ -18,10 +18,12 @@ export const Skills: React.FC = () => {
   const handleEditClick = () => {
     dispatch(skillsIsOpenAction(true));
   };
+  
   useEffect(() => {
     dispatch(skillsIsOpenAction(null));
     dispatch(getSkillsThunk());
-  }, []);
+  }, [dispatch]);
+
   if (status === "rejected")
     return (
       <div className={styles.emptyContainer}>

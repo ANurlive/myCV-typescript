@@ -2,26 +2,32 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import Panel from "./Panel";
 import "@testing-library/jest-dom";
 
-// Моки для зависимостей
+
 jest.mock("../Navigation/Navigation", () => () => (
   <div data-testid="navigation" />
 ));
-jest.mock("../Button/Button", () => ({ text, onClick }: any) => (
-  <button onClick={onClick}>{text}</button>
-));
-jest.mock("../PhotoBox/PhotoBox", () => ({ name, avatar }: any) => (
-  <div data-testid="photobox">
-    {name} - {avatar}
-  </div>
-));
+jest.mock("../Button/Button", () =>
+  function MockButton(props: { text: string; onClick: () => void }) {
+    return <button onClick={props.onClick}>{props.text}</button>;
+  }
+);
 
-// Мокаем useNavigate
+jest.mock("../PhotoBox/PhotoBox", () =>
+  function MockPhotoBox(props: { name: string; avatar: string }) {
+    return (
+      <div data-testid="photobox">
+        {props.name} - {props.avatar}
+      </div>
+    );
+  }
+);
+
 const mockNavigate = jest.fn();
 jest.mock("react-router-dom", () => ({
   useNavigate: () => mockNavigate,
 }));
 
-// Мокаем myData
+
 jest.mock("@/constants/aboutMe", () => ({
   myData: {
     name: "John Doe",
